@@ -18,14 +18,14 @@ The [`gmcouto/mergeheader`](../../tree/gmcouto/mergeheader) branch adds support 
 
 ### Custom indexers (updated automatically)
 
-Additional Cardigann indexer definitions live in the separate [Prowlarr-Indexers](https://github.com/gmcouto/Prowlarr-Indexers) repository under [`custom-definitions/v11/`](https://github.com/gmcouto/Prowlarr-Indexers/tree/master/custom-definitions/v11). They are **not** bundled in the Docker image, but will automatically download (and update) by the definitions synchronization task.
+Additional Cardigann indexer definitions live in the separate [Prowlarr-Indexers](https://github.com/biel-homelab/Prowlarr-Indexers) repository under [`custom-definitions/v11/`](https://github.com/biel-homelab/Prowlarr-Indexers/tree/master/custom-definitions/v11). They are **not** bundled in the Docker image, but will automatically download (and update) by the definitions synchronization task.
 
 | File | Indexer |
 |------|---------|
-| [`bjshare_gaucho.yml`](https://github.com/gmcouto/Prowlarr-Indexers/blob/master/custom-definitions/v11/bjshare_gaucho.yml) | BjShare Gaucho (disable grouping on site for this to work) |
-| [`capybarabr_gaucho.yml`](https://github.com/gmcouto/Prowlarr-Indexers/blob/master/custom-definitions/v11/capybarabr_gaucho.yml) | CapybaraBR Gaucho (API) |
-| [`locadora_gaucho.yml`](https://github.com/gmcouto/Prowlarr-Indexers/blob/master/custom-definitions/v11/locadora_gaucho.yml) | Locadora Gaucho (API) |
-| [`samaritano_gaucho.yml`](https://github.com/gmcouto/Prowlarr-Indexers/blob/master/custom-definitions/v11/samaritano_gaucho.yml) | SAMARITANO Gaucho (API) |
+| [`bjshare_gaucho.yml`](https://github.com/biel-homelab/Prowlarr-Indexers/blob/master/custom-definitions/v11/bjshare_gaucho.yml) | BjShare Gaucho (disable grouping on site for this to work) |
+| [`capybarabr_gaucho.yml`](https://github.com/biel-homelab/Prowlarr-Indexers/blob/master/custom-definitions/v11/capybarabr_gaucho.yml) | CapybaraBR Gaucho (API) |
+| [`locadora_gaucho.yml`](https://github.com/biel-homelab/Prowlarr-Indexers/blob/master/custom-definitions/v11/locadora_gaucho.yml) | Locadora Gaucho (API) |
+| [`samaritano_gaucho.yml`](https://github.com/biel-homelab/Prowlarr-Indexers/blob/master/custom-definitions/v11/samaritano_gaucho.yml) | SAMARITANO Gaucho (API) |
 
 
 ## Releases
@@ -39,13 +39,13 @@ Additional Cardigann indexer definitions live in the separate [Prowlarr-Indexers
 Replace the version tag with the [latest release](../../releases/latest):
 
 ```bash
-docker pull ghcr.io/gmcouto/prowlarr:latest
+docker pull ghcr.io/biel-homelab/prowlarr:latest
 ```
 
 ```yaml
 services:
   prowlarr:
-    image: ghcr.io/gmcouto/prowlarr:latest
+    image: ghcr.io/biel-homelab/prowlarr:latest
     container_name: prowlarr
     ports:
       - "9696:9696"
