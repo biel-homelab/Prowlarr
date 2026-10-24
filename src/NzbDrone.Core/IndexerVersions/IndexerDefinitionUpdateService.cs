@@ -297,7 +297,7 @@ namespace NzbDrone.Core.IndexerVersions
                 var definitionsFolder = Path.Combine(startupFolder, "Definitions");
                 var saveFile = Path.Combine(definitionsFolder, "indexers.zip");
 
-                _httpClient.DownloadFile("https://github.com/gmcouto/Prowlarr-Indexers/archive/refs/heads/v11.zip", saveFile);
+                _httpClient.DownloadFile("https://github.com/biel-homelab/Prowlarr-Indexers/archive/refs/heads/v11.zip", saveFile);
 
                 using (var archive = ZipFile.OpenRead(saveFile))
                 {
