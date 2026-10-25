@@ -7,7 +7,7 @@ on:
 
 jobs:
   lock:
-    runs-on: [self-hosted, Linux, X64, galadriel]
+    runs-on: [self-hosted, Linux, X64]
     steps:
       - uses: dessant/lock-threads@v5
         with:

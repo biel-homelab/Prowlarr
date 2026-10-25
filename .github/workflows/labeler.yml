@@ -7,6 +7,6 @@ jobs:
     permissions:
       contents: read
       pull-requests: write
-    runs-on: [self-hosted, Linux, X64, galadriel]
+    runs-on: [self-hosted, Linux, X64]
     steps:
       - uses: actions/labeler@v5
