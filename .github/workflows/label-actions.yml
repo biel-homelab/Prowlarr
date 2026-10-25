@@ -16,7 +16,7 @@ permissions:
 
 jobs:
   action:
-    runs-on: [self-hosted, Linux, X64, galadriel]
+    runs-on: [self-hosted, Linux, X64]
     steps:
       - uses: dessant/label-actions@v4
         with:

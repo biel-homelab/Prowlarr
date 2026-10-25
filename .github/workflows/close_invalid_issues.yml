@@ -8,7 +8,7 @@ on:
 
 jobs:
   close-issue:
-    runs-on: [self-hosted, Linux, X64, galadriel]
+    runs-on: [self-hosted, Linux, X64]
     permissions:
       issues: write
     steps:
