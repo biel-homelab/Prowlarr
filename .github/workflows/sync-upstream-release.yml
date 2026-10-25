@@ -33,7 +33,7 @@ env:
 
 jobs:
   sync:
-    runs-on: [self-hosted, Linux, X64, galadriel]
+    runs-on: [self-hosted, Linux, X64]
 
     steps:
       - name: Checkout
